@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta DNI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        #cargando {
+            display: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulta DNI</h1>
+    <label for="dni">Ingrese el DNI:</label>
+    <input type="text" id="dni" maxlength="8" placeholder="Ingrese DNI de 8 dígitos">
+    <button id="consultaBtn">Consultar</button>
+
+    <!-- Mensaje de carga -->
+    <div id="cargando">Cargando datos, por favor espere...</div>
+
+    <div class="result" id="resultado" style="display: none;">
+        <h3>Datos del DNI</h3>
+        <p><strong>Número:</strong> <span id="numero"></span></p>
+        <p><strong>Nombres:</strong> <span id="nombres"></span></p>
+        <p><strong>Apellido Paterno:</strong> <span id="apellido_paterno"></span></p>
+        <p><strong>Apellido Materno:</strong> <span id="apellido_materno"></span></p>
+        <p><strong>Fecha de Nacimiento:</strong> <span id="fecha_nacimiento"></span></p>
+        <p><strong>Departamento:</strong> <span id="departamento"></span></p>
+        <p><strong>Provincia:</strong> <span id="provincia"></span></p>
+        <p><strong>Distrito:</strong> <span id="distrito"></span></p>
+        <p><strong>Dirección:</strong> <span id="direccion"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
